@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+    <h1 class="head">Hostel Management System</h1>
+           <!--Container-->
+           <div class="container">
+            <div class="main-box login">
+              <h1>Admin Login</h1>
+              <form action="admin.php" method="POST">
+               <div class="input-box">
+                 <span class="icon"><i class='bx bxs-envelope'></i></span>
+                 <input type="email" name="email"  required>
+                 <label for="email" class="lable">Email</label>
+               </div>
+   
+               <div class="input-box">
+                 <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                 <input type="password" name="password" required>
+                 <label for="password" class="lable">Password</label>
+               </div>
+   
+               <div class="check">
+                 <label class="lable"><input type="checkbox">Remember me </label>
+                 <a href="#">Forget Password</a>
+               </div>
+                
+               <button type="submit" class="btn">Login</button>
+              </form>
+            </div>
+           </div>
+
+           <footer class="footer">
+            <i class="bx bxs-envelop"></i><p>Developed by  @Elango</p>
+         </footer>
+</body>
+</html>

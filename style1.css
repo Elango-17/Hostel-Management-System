@@ -1,0 +1,93 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8; /* Light gray background */
+    color: #333; /* Dark text */
+}
+
+/* Main content container */
+.content {
+    padding: 50px;
+}
+
+/* Page title */
+.page-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px; /* Larger font size */
+}
+
+/* Panel styles */
+.panel {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.panel-heading {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 15px 20px; /* Larger padding */
+    border-top-left-radius: 8px; /* Rounded corners */
+    border-top-right-radius: 8px; /* Rounded corners */
+}
+
+.panel-body {
+    padding: 20px;
+}
+
+/* Table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    position: relative;
+    overflow: hidden;
+}
+
+.table::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px); /* Blurred background */
+    z-index: -1;
+}
+
+.table th, .table td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Link styles */
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: #666; /* Dark gray on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .table-responsive {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+    }
+}

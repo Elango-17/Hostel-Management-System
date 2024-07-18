@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Management System</title>
+    <link rel="stylesheet" href="register.css">
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="head" >Hostel Management System</h1>
+           <!--Container-->
+           <div class="container">
+            <div class="main-box login">
+              <h1>Student Registration</h1>
+              <form action="registration.php" method="POST">
+
+                <div class="input-box">
+                    <span class="icon"><i class='bx bxs-detail'></i></span>
+                    <input type="text" name="register_no"  required>
+                    <label for="register_no" class="lable">Register No:</label>
+                </div>
+
+               <div class="input-box">
+                   <span class="icon"><i class='bx bxs-user'></i></span>
+                   <input type="text" name="first_name"  required>
+                   <label class="lable">First Name:</label>
+               </div>
+
+               <div class="input-box">
+                <span class="icon"><i class='bx bxs-user'></i></span>
+                <input type="text" name="middle_name" >
+                <label class="lable">Middle Name:</label> 
+               </div>
+
+               <div class="input-box">
+                <span class="icon"><i class='bx bxs-user'></i></span>
+                <input type="text" name="last_name" required>
+                <label class="lable">Last Name:</label>
+               </div>
+
+               <div class="input-box">
+                <span class="icon"><i class='bx bxs-group'></i></span>
+                <input type="text" name="gender"  required>
+                <label class="lable">Gender:</label>
+               </div>
+
+               <div class="input-box">
+                <span class="icon"><i class='bx bxs-phone'></i></span>
+                <input type="mobile" name="contact_num"  required>
+                <label class="lable">Contact No:</label>
+              </div>
+
+               <div class="input-box">
+                 <span class="icon"><i class='bx bxs-envelope'></i></span>
+                 <input type="email" name="email" required>
+                 <label class="lable">Email:</label>
+               </div>
+   
+               <div class="input-box">
+                 <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                 <input type="password" name="password"  required>
+                 <label class="lable" id="password" name="password" >Password:</label>
+               </div>
+                
+               <button type="submit" class="btn">Register</button>
+   
+               <div class="register">
+                 <p>If you don't have an account?<a href="index.html" class="register-link">
+                   Login here!</a></p>
+               </div>
+              </form>
+            </div>
+          
+             </form>
+             <script type="text/javascript" src="script.js"></script>
+           </div>
+
+           <footer class="footer">
+             <i class="bx bxs-envelop"></i><p>Developed by  @Elango</p>
+          </footer>
+
+</body>
+</html>
